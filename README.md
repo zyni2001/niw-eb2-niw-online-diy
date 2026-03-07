@@ -1,0 +1,63 @@
+# EB-2 NIW DIY Skill
+
+A reusable Codex skill for preparing a self-filed `EB-2 National Interest Waiver (NIW)` I-140 packet, with a strong focus on `online filing`.
+
+This skill is designed for applicants and collaborators who want a repeatable workflow for:
+
+- mapping evidence to the three `Matter of Dhanasar` prongs
+- drafting and refining an NIW petition letter
+- drafting technically proximate and independent recommendation letters
+- organizing evidence into USCIS online upload buckets
+- assembling packet PDFs with clean, consistent naming
+- normalizing screenshot-heavy PDFs into readable U.S. letter-size uploads
+
+## What is included
+
+- `SKILL.md`
+  The main workflow and decision rules for NIW packet preparation.
+- `references/petition_letter.md`
+  Guidance for structuring a strong NIW petition letter.
+- `references/online_filing_mapping.md`
+  Guidance for packet naming and USCIS online filing buckets.
+- `references/recommendation_letters.md`
+  Guidance for differentiating dependent and independent recommendation letters.
+- `scripts/merge_pdfs.sh`
+  Merge related PDFs into a single packet PDF.
+- `scripts/normalize_to_letter.sh`
+  Standardize screenshot-heavy or mixed-size PDFs to U.S. letter pages.
+- `agents/openai.yaml`
+  UI metadata for using this skill in Codex/OpenAI skill environments.
+
+## Intended use
+
+This skill is for document organization, drafting support, and packet assembly. It is not legal advice. USCIS filing requirements, fees, form editions, and addresses change over time and should be verified from official sources before filing.
+
+## Suggested use pattern
+
+1. Confirm the filing path:
+   `advanced degree` vs `exceptional ability`, and `online` vs `paper`.
+2. Build the evidence map around `Dhanasar`.
+3. Draft a fact-dense petition letter anchored in government policy and standards.
+4. Draft distinct recommendation letters with quotable, role-appropriate language.
+5. Assemble upload-ready packet PDFs aligned with USCIS upload categories.
+6. Normalize mixed-size supporting PDFs before final upload.
+
+## Installation / reuse
+
+If you use Codex skills directly, place this folder into your skills directory and invoke it as:
+
+`$niw-eb2-niw-online-diy`
+
+If you are publishing this as a standalone repository, this directory is already structured so that the repo root can be this folder itself.
+
+## License
+
+This public package is released under the `MIT` license. For a lightweight skill repository containing documentation and small utility scripts, MIT is usually the most practical default because it is short, permissive, and easy for others to reuse in their own workflows.
+
+## Notes
+
+- Government policy and standards are stronger than news for `Prong 1`.
+- News and real-world incidents should corroborate national importance, not carry it.
+- Citation quality is often more persuasive than raw citation count.
+- Review completion proof is stronger than invitation emails.
+- For online filing, packet names are usually clearer than paper-style exhibit numbers.

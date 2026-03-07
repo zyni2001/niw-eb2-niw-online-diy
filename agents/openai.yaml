@@ -1,0 +1,4 @@
+interface:
+  display_name: "EB-2 NIW DIY"
+  short_description: "Prepare self-filed EB-2 NIW online packets"
+  default_prompt: "Use $niw-eb2-niw-online-diy to organize, draft, and polish a self-filed EB-2 NIW I-140 packet for online filing."
