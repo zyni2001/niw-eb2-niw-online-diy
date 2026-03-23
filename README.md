@@ -10,6 +10,7 @@ This skill is designed for applicants and collaborators who want a repeatable wo
 - organizing evidence into USCIS online upload buckets
 - assembling packet PDFs with clean, consistent naming
 - normalizing screenshot-heavy PDFs into readable U.S. letter-size uploads
+- handling upload-hostile PDFs by flattening or splitting them into upload-safe packets
 
 ## What is included
 
@@ -41,6 +42,19 @@ This skill is for document organization, drafting support, and packet assembly. 
 4. Draft distinct recommendation letters with quotable, role-appropriate language.
 5. Assemble upload-ready packet PDFs aligned with USCIS upload categories.
 6. Normalize mixed-size supporting PDFs before final upload.
+7. Flatten or rebuild screenshot-heavy packets if the USCIS uploader rejects them.
+
+## Current upload-ready model
+
+The current recommended online-filing structure in this repository uses:
+
+- `NIW-01` through `NIW-07` for the main NIW evidence bucket
+- packetized academic records such as `AcademicRecord_USC_MS_Packet.pdf`
+- clarification PDFs for legacy/inapplicable buckets when useful
+- `ETA-9089_Final_Determination.pdf` under `Additional Evidence`
+- a hybrid upload-safe peer-review packet: `NIW-05_Peer_Review_And_Awards_Packet_Hybrid.pdf`
+
+See `references/online_filing_mapping.md` for the concrete upload tree.
 
 ## Installation / reuse
 
@@ -61,3 +75,4 @@ This public package is released under the `MIT` license. For a lightweight skill
 - Citation quality is often more persuasive than raw citation count.
 - Review completion proof is stronger than invitation emails.
 - For online filing, packet names are usually clearer than paper-style exhibit numbers.
+- USCIS uploaders sometimes reject structurally messy PDFs even when the content is fine; flattened or hybrid PDFs are often more reliable than the original merge.

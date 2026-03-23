@@ -36,11 +36,14 @@ Use this skill for self-prepared EB-2 NIW I-140 work, especially online filing. 
    - Use `references/online_filing_mapping.md`.
    - Prefer packet-style file names such as `NIW-01_Petition_Letter.pdf` instead of only `Exhibit-1.pdf`.
    - Keep the petition letter's references aligned with those packet names.
+   - For advanced-degree NIW, treat `Proof of exceptional abilities` and `Form ETA-750/750B` as normally unused buckets unless the specific filing path truly requires them.
+   - If a bucket is intentionally unused, a short clarification PDF can be cleaner than a local README note.
 
 6. Keep PDFs readable and uniform.
    - Merge related PDFs into packet PDFs with `scripts/merge_pdfs.sh`.
    - Normalize screenshot-heavy or mixed-size PDFs to U.S. letter pages with `scripts/normalize_to_letter.sh`.
    - For research papers, default to first page only; add one key-results page only when the petition letter relies on a specific result.
+   - If USCIS rejects a structurally messy PDF, rebuild it as a flattened or hybrid upload-safe PDF rather than assuming the content is the problem.
 
 ## Use These References
 
@@ -56,3 +59,4 @@ Use this skill for self-prepared EB-2 NIW I-140 work, especially online filing. 
 - Review invitations are weaker than completion proof; prefer completion certificates, reviewer-console screenshots, and summary pages showing the number of completed reviews.
 - For online filing, do not force every document into a traditional exhibit-number system if packet names are clearer.
 - If a packet contains screenshot pages with inconsistent dimensions, normalize the whole packet before upload.
+- If a school-issued transcript PDF is encrypted, generate a clean non-encrypted copy for the upload-ready folder and reference that clean version in the filing checklist.
